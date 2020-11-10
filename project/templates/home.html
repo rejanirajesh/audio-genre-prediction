@@ -35,7 +35,8 @@
     <section class="container-fluid">
       <section class="row justify-content-center">
         <section>
-            <form target="_blank" name="loginform" method="POST" action="/login" class="form-container">
+            <form  name="loginform" method="POST" action="/login" class="form-container">
+            <input id = "csrf_token" name = "csrf_token" type = "hidden" />
               <div class="form-group">
                 <h4 class="col-md-12 text-center" id="login">Login</h4>
                 <i class="fas fa-user"></i>
