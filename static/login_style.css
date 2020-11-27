@@ -22,7 +22,7 @@ input{
     transition:border 0.5s ;
     outline: none;
     color: #fff;
-	left: 42%;
+    left: 42%;
 	position: absolute;
 }
 .btn-primary{

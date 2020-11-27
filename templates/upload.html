@@ -12,10 +12,7 @@
     />
     <link rel="stylesheet" href="static/style.css" />
   </head>
-  <script
-    type="text/javascript"
-    src="//code.jquery.com/jquery-1.10.2.min.js"
-  ></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 
   <body>
     <div id="stars"></div>
@@ -28,19 +25,22 @@
       action="/upload"
       enctype="multipart/form-data"
     >
-      <div class="file-upload">
-        <div class="file-select">
-          <div class="file-select-button" id="fileName">Choose File</div>
-          <div class="file-select-name" id="noFile">No file chosen...</div>
-          <input type="file" name="chooseFile" id="chooseFile" />
+      <div class="col-md-6 text-center">
+        <div class="file-upload">
+          <div class="file-select">
+            <div class="file-select-button" id="fileName">Choose File</div>
+            <div class="file-select-name" id="noFile">No file chosen...</div>
+            <input type="file" name="chooseFile" id="chooseFile" />
+          </div>
         </div>
       </div>
-      <div class="submit_button">
-        <button type="submit" class="btn btn-primary">Upload</button>
+      <div class="col-md-6 text-center">
+        <div class="submit_button">
+          <button type="submit" class="btn btn-primary" href="output.html">Upload</button>
+        </div>
       </div>
-      <div class="col-md-12 text-center"></div>
     </form>
-    <button id="back" onclick="logout()" class="btn btn-primary">Logout</button>
+    <!--<button id="back" href=logout class="btn btn-primary">Logout</button>-->
     <script>
       $("#chooseFile").bind("change", function () {
         var filename = $("#chooseFile").val();
